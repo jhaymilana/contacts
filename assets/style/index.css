@@ -63,3 +63,12 @@ input[type=button] {
 input[type=button]:hover {
   background-color: var(--app-blue-hover);
 }
+
+.contact-storage {
+  background-color: var(--app-background-info);
+  display: grid;
+  margin-top: 30px;
+  margin-left: 220px;
+  height: 625px;
+  width: 1500px;
+}
