@@ -15,12 +15,51 @@ body {
 
 :root {
   --app-background: #181b2d;
-  --app-storage: rgba(50, 67, 75, 0.5);
   --app-white: #fff;
   --app-blue: #3c57ff;
   --app-blue-hover: #364ee6;
+  --app-background-info: #2a2f4e;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Main
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.title {
+  display: grid;
+  place-items: center;
+  color: var(--app-white);
+  padding-top: 150px;
+  font-size: 25px;
+  letter-spacing: 0.4px;
+}
+
+.input-form {
+  margin-top: 15px;
+  margin-left: 37%;
+}
+
+input[type=text], input[type=button] {
+  height: 35px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+input[type=text] {
+  background-color: var(--app-background-info);
+  color: var(--app-white);
+  width: 400px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+input[type=button] {
+  background-color: var(--app-blue);
+  color: var(--app-white);
+  text-transform: capitalize;
+  width: 100px;
+}
+
+input[type=button]:hover {
+  background-color: var(--app-blue-hover);
+}
