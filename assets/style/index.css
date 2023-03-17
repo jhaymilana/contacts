@@ -93,4 +93,9 @@ input[type=button]:hover {
   height: 130px;
   width: 280px;
   border-radius: 5px;
+  padding: 10px;
+}
+
+p {
+  padding-top: 7px;
 }
