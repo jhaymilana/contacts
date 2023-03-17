@@ -29,7 +29,7 @@ body {
   display: grid;
   place-items: center;
   color: var(--app-white);
-  padding-top: 100px;
+  padding-top: 90px;
   font-size: 25px;
   letter-spacing: 0.4px;
 }
@@ -81,15 +81,16 @@ input[type=button]:hover {
   width: 1500px;
   grid-template-columns: repeat(5, 285px);
   grid-template-rows: repeat(4, 150px);
-  gap: 10px;
-  padding: 10px;
+  column-gap: 12px;
+  row-gap: 5px;
+  padding: 15px;
   border-radius: 8px;
 }
 
 .contact-info {
   background-color: var(--app-background);
   color: var(--app-white);
-  height: 120px;
-  width: 285px;
+  height: 130px;
+  width: 280px;
   border-radius: 5px;
 }
