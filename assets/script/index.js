@@ -13,6 +13,7 @@ let storage = document.querySelector('.contact-storage');
 let input = document.querySelector('.contact-input');
 let add = document.querySelector('.add');
 let output = document.querySelector('.output p');
+let contact = document.querySelector('.contact-info');
 
 function createContact() {
   let newContact = document.createElement('div');
@@ -22,7 +23,7 @@ function createContact() {
   let inputArr = input.value.split(',');
 
   newContact.className = `contact-info`;
-  
+
   contactName.innerHTML = `Name: ${inputArr[0]}`;
   contactCity.innerHTML = `City: ${inputArr[1]}`;
   contactEmail.innerHTML = `Email: ${inputArr[2]}`;
@@ -34,11 +35,14 @@ function createContact() {
 }
 
 add.addEventListener('click', function() {
-  if (storage.childElementCount <= 19) {
-    createContact();
-    output.innerHTML = 'Contact saved.'
+  if (input.hasAttribute(',') && input.hasAttribute('@') && input.length() > 0){
+    if (storage.childElementCount <= 19) {
+      createContact();
+      output.innerHTML = 'Contact saved.'
+    } else {
+      output.innerHTML = 'Please delete 1 contact.'
+    }
   } else {
-    output.innerHTML = 'Please delete 1 contact.'
+    output.innerHTML = 'Please input correct info.'
   }
 });
-
